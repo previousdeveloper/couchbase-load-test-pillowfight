@@ -1,7 +1,7 @@
 FROM centos:7
 ENV PARAMS=""
 
-RELASE_VERSION = "couchbase-release-1.0-6-x86_64.rpm;"
+ENV RELASE_VERSION = "couchbase-release-1.0-6-x86_64.rpm;"
 
 RUN yum update -y && \
     yum install -y epel-release && \
