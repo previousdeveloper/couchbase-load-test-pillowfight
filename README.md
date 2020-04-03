@@ -8,3 +8,5 @@ Performance Testing and Load Testing Couchbase with Pillowfight
 docker run --env=PARAMS="couchbase://url/bucket -u test -P password -I 100000 --json -e 100 --subdoc -M 1024 -t 10"
 ```
 
+
+https://blog.couchbase.com/performance-testing-load-testing-couchbase-pillowfight/
