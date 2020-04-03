@@ -1,7 +1,6 @@
 FROM centos:7
 ENV PARAMS=""
 
-ENV RELASE_VERSION = "couchbase-release-1.0-6-x86_64.rpm;"
 
 RUN yum update -y && \
     yum install -y epel-release && \
@@ -9,8 +8,8 @@ RUN yum update -y && \
 
 RUN yum install -y wget
 
-RUN wget http://packages.couchbase.com/releases/couchbase-release/${RELASE_VERSION} \
-    rpm -iv ${RELASE_VERSION} \
+RUN wget http://packages.couchbase.com/releases/couchbase-release/couchbase-release-1.0-6-x86_64.rpm; \
+    rpm -iv couchbase-release-1.0-6-x86_64.rpm; \
     yum install -y \
         libcouchbase-devel \
         gcc \
