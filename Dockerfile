@@ -1,7 +1,6 @@
 FROM centos:7
 ENV PARAMS=""
 
-
 RUN yum update -y && \
     yum install -y epel-release && \
     yum groupinstall -y development
